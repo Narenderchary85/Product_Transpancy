@@ -57,15 +57,7 @@ const Homepage = () => {
               Build Trust Through Transparency
             </motion.h1>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-xl text-orange-700 max-w-3xl mx-auto mb-10"
-            >
-              Altibbe | Hedamo helps companies collect detailed product data, generate transparency reports, and empower ethical, health-first decisions.
-            </motion.p>
-
+           
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -212,7 +204,7 @@ const Homepage = () => {
                 <div className="bg-orange-600 p-2 rounded-lg mr-3">
                   <FiCheckCircle className="text-white text-xl" />
                 </div>
-                <span className="text-xl font-bold">Altibbe | Hedamo</span>
+                <span className="text-xl font-bold">Altibbe</span>
               </div>
               <p className="text-orange-200">
                 Empowering companies to build trust through transparency and ethical product insights.
