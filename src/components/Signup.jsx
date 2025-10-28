@@ -21,7 +21,7 @@ const Signup = () => {
     setError("");
 
     try {
-      const reponse= await axios.post(`http://localhost:1000/auth/signup`, signupData);
+      const reponse= await axios.post(`https://product-transpancy-backend.onrender.com/auth/signup`, signupData);
       console.log(reponse);
       setSigned(true);
     } catch (err) {

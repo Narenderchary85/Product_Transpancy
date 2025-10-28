@@ -22,7 +22,7 @@ const Login = () => {
     setError("");
 
     try {
-      const response = await axios.post(`http://localhost:1000/auth/login`, loginData, {
+      const response = await axios.post(`https://product-transpancy-backend.onrender.com/auth/login`, loginData, {
         withCredentials: true,
       });
       Cookies.set("user", JSON.stringify(response.data.user), { expires: 1 });

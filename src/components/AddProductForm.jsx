@@ -51,7 +51,7 @@ const AddProductForm = () => {
     setError("");
 
     try {
-      const res = await fetch("http://localhost:5000/generate-questions", {
+      const res = await fetch("https://ai-rag-cune.onrender.com/generate-questions", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -105,7 +105,7 @@ const AddProductForm = () => {
         current_score: transparencyScore
       });
 
-      const res = await fetch("http://localhost:5000/generate-questions", {
+      const res = await fetch("https://ai-rag-cune.onrender.com/generate-questions", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -181,7 +181,7 @@ const AddProductForm = () => {
       }
     ];
 
-    const res = await fetch("http://localhost:5000/test-scoring", {
+    const res = await fetch("https://ai-rag-cune.onrender.com/test-scoring", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ test_answers: testAnswers })
@@ -206,7 +206,7 @@ const AddProductForm = () => {
     };
 
     try {
-      const addRes = await fetch("http://localhost:1000/product/addproduct", {
+      const addRes = await fetch("https://product-transpancy-backend.onrender.com/product/addproduct", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

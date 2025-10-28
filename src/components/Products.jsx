@@ -14,7 +14,7 @@ const Products = () => {
 
   const fetchProducts = async () => {
     try {
-      const res = await fetch('http://localhost:1000/product/getproducts');
+      const res = await fetch('https://product-transpancy-backend.onrender.com/product/getproducts');
       const data = await res.json();
       
       if (data.success) {
@@ -38,7 +38,7 @@ const Products = () => {
     setError('');
 
     try {
-      const res = await fetch(`http://localhost:1000/product/getproduct/${productId}`);
+      const res = await fetch(`https://product-transpancy-backend.onrender.com/product/getproduct/${productId}`);
       const data = await res.json();
       
       if (data.success) {
